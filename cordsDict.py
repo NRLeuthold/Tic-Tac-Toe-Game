@@ -1,1 +1,0 @@
-cordsX = {'Test': 'testVAR1'}

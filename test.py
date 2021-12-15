@@ -1,4 +1,4 @@
-from cordsDict import cords
+from XcordsDict import cords
 
 var = 'Test'
 print(cords[var])
