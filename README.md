@@ -10,3 +10,5 @@ Letters are assigned left to right top to bottom in alphabetical order. Numbers 
   The middle-right tile in the bottom left large tile would be G6.
   The top-middle tile in the center larger tile E2.
   etc.
+
+  Read Tic-Tac-Toe Tile ID.xlsx for all ID codes

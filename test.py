@@ -1,4 +1,4 @@
-from XcordsDict import cords
+from YcordsDict import cordsY
 
-var = 'Test'
-print(cords[var])
+var = 'ID'
+print(cordsY[var])
