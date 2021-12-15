@@ -25,7 +25,7 @@ FinO = pygame.transform.scale(FinO, (125, 125))
 while True:
 
     WIN.blit(BG, (0,0))
-    WIN.blit(PlayX, (130, 50))
+    WIN.blit(PlayX, (50, 130))
     WIN.blit(PlayO, (50, 90))
     #WIN.blit(FinX, (38, 189))
     #WIN.blit(FinO, (38, 338))
