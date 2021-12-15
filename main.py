@@ -1,6 +1,6 @@
 import pygame
 import os
-from cordsDict import cordsX
+from XcordsDict import cordsX
 pygame.init()
 
 WIDTH, HEIGHT = 500,500
