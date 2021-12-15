@@ -1,5 +1,6 @@
 import pygame
 import os
+from cordsDict import cordsX
 pygame.init()
 
 WIDTH, HEIGHT = 500,500
@@ -26,11 +27,12 @@ while True:
     WIN.blit(BG, (0,0))
     WIN.blit(PlayX, (50, 50))
     WIN.blit(PlayO, (50, 90))
-    WIN.blit(FinX, (38, 189))
-    WIN.blit(FinO, (38, 338))
+    #WIN.blit(FinX, (38, 189))
+    #WIN.blit(FinO, (38, 338))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
     
     pygame.display.update()
+
