@@ -55,9 +55,6 @@ def isOver(self, pos):
             return True
     return False
 
-Player1 = button(red, 149, 0, 100, 25, text='Player 1')
-Player2 = button(blue, 251, 0, 100, 25, text='Player 2')
-
 A1 = button(white, 50, 50, 20, 20, text='')
 A2 = button(white, 90, 50, 20, 20, text='')
 A3 = button(white, 130, 50, 20, 20, text='')
@@ -149,32 +146,11 @@ I8 = button(white, 390, 430, 20, 20, text='')
 I9 = button(white, 430, 430, 20, 20, text='')
 
 
-play = 0
+play = 1
 
 while True:
 
     WIN.blit(BG, (0,0))
-
-    draw(Player1, WIN)
-    if isOver(Player1, pygame.mouse.get_pos()) == True:
-        Player1.color = dark_red
-        for event in pygame.event.get():
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                play = 1
-
-            else:
-                Player1.color = red
-
-    draw(Player2, WIN)
-    if isOver(Player2, pygame.mouse.get_pos()) == True:
-        Player2.color = dark_blue
-        for event in pygame.event.get():
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                play = 2
-
-            else:
-                Player2.color = blue
-
 
     draw(A1, WIN)
     if isOver(A1, pygame.mouse.get_pos()) == True:
@@ -1473,18 +1449,6 @@ while True:
         if I9.text == 'X' or I9.text == 'O':
             I9.color = ((255,255,255))
 
-
-    if play == 1:
-        Player1.text = 'Your Turn'
-        Player2.text = 'Player 2'
-    
-    if play == 2:
-        Player1.text = 'Player 1'
-        Player2.text = 'Your Turn'
-    
-    if play == 0:
-        Player1.text = 'Player 1'
-        Player2.text = 'Player 2'
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
