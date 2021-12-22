@@ -1,12 +1,18 @@
 import pygame
-from pygame import color
+import main
+pygame.display.init()
 pygame.init()
 
-WIDTH, HEIGHT = 500,500
+icon = pygame.image.load("Assets/board_icon.png")
+pygame.display.set_icon(icon)
 
-WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+WIDTH, HEIGHT = 500,500
+WIN = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
+
+pygame.display.set_caption("Tic-Tac-Toe")
 
 white = (255,255,255)
+dark_red = (153,0,0)
 
 class button():
     def __init__(self, color, x, y, width, height, text=''):
@@ -19,7 +25,7 @@ class button():
 
 def draw(self, WIN, outline=None):
     if outline:
-        pygame.draw.rect(WIN, outline, (self.x-2,self.y-2,self.width+4,self.height+4),0)
+        pygame.draw.rect(WIN, outline, (self.x,self.y,self.width+2,self.height+2),0)
     
     pygame.draw.rect(WIN, self.color, (self.x,self.y,self.width,self.height),0)
 
@@ -34,24 +40,38 @@ def isOver(self, pos):
             return True
     return False
 
-start = button(white, 200, 225, 100, 50, text='START')
+running = True
 
+while running:
+    x, y = WIN.get_size()
 
-while True:
+    x_pos = x * .4
+    y_pos = y * .45
 
-    draw(start, WIN)
+    x_wid = x * .2
+    y_hei = y * .1
+
+    if x_wid < 75:
+        x_wid = 75
+    
+    if y_hei < 22:
+        y_hei = 22
+
+    start = button((255,0,0), x_pos, y_pos, x_wid, y_hei, text='START')
+
+    draw(start, WIN, outline=dark_red)
     if isOver(start, pygame.mouse.get_pos()) == True:
         start.color = (255,255,0)
         for event in pygame.event.get():
             if event.type == pygame.MOUSEBUTTONDOWN:
-                WIN.fill((0,255,0))
+                main.main()
     else:
         start.color = (255,255,255)
 
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            pygame.quit()
+            running = False
 
-    
     pygame.display.update()
+
+pygame.quit()
