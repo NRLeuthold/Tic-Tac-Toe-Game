@@ -1,0 +1,143 @@
+                    if iii=='1':
+                        
+                        iii3 = int(iii) + 3
+                        iii4 = int(iii) + 4
+                        iii5 = int(iii) + 6
+                        iii6 = int(iii) + 8
+
+                    
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+                        iii5 = str(let) + str(iii5)
+                        iii6 = str(let) + str(iii6)
+
+                        return iii1, iii2, iii3, iii4, iii5, iii6
+                    
+                    elif iii=='2':
+                        iii1 = int(iii) + 1
+                        iii2 = int(iii) - 1
+                        iii3 = int(iii) + 3
+                        iii4 = int(iii) + 6
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+
+                        return iii1, iii2, iii3, iii4
+                    
+                    elif iii=='3':
+                        iii1 = int(iii) - 1
+                        iii2 = int(iii) - 2
+                        iii3 = int(iii) + 2
+                        iii4 = int(iii) + 3
+                        iii5 = int(iii) + 4
+                        iii6 = int(iii) + 6
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+                        iii5 = str(let) + str(iii5)
+                        iii6 = str(let) + str(iii6)
+
+                        return iii1, iii2, iii3, iii4, iii5, iii6
+
+                    elif iii=='4':
+                        iii1 = int(iii) + 1
+                        iii2 = int(iii) + 2
+                        iii3 = int(iii) + 3
+                        iii4 = int(iii) + 4
+                        iii5 = int(iii) - 3
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+                        iii5 = str(let) + str(iii5)
+
+                        return iii1, iii2, iii3, iii4, iii5
+                    
+                    elif iii=='5':
+                        iii1 = int(iii) + 1
+                        iii2 = int(iii) + 2
+                        iii3 = int(iii) + 3
+                        iii4 = int(iii) + 4
+                        iii5 = int(iii) - 1
+                        iii6 = int(iii) - 2
+                        iii7 = int(iii) - 3
+                        iii8 = int(iii) - 4
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+                        iii5 = str(let) + str(iii5)
+                        iii6 = str(let) + str(iii6)
+                        iii7 = str(let) + str(iii7)
+                        iii8 = str(let) + str(iii8)
+
+                        return iii1, iii2, iii3, iii4, iii5, iii6, iii7, iii8
+                    
+                    elif iii=='6':
+                        iii1 = int(iii) - 3
+                        iii2 = int(iii) - 2
+                        iii3 = int(iii) - 1
+                        iii4 = int(iii) + 3
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+
+                        return iii1, iii2, iii3, iii4
+                    
+                    elif iii=='7':
+                        iii1 = int(iii) + 1
+                        iii2 = int(iii) + 2
+                        iii3 = int(iii) - 3
+                        iii4 = int(iii) - 6
+                        iii5 = int(iii) - 2
+                        iii6 = int(iii) - 4
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+                        iii5 = str(let) + str(iii5)
+                        iii6 = str(let) + str(iii6)
+
+                        return iii1, iii2, iii3, iii4, iii5, iii6
+
+                    elif iii=='8':
+                        iii1 = int(iii) - 1
+                        iii2 = int(iii) + 1
+                        iii3 = int(iii) - 3
+                        iii4 = int(iii) - 6
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+
+                        return iii1, iii2, iii3, iii4
+
+                    elif iii=='9':
+                        iii1 = int(iii) - 1
+                        iii2 = int(iii) - 2
+                        iii3 = int(iii) - 3
+                        iii4 = int(iii) - 4
+                        iii5 = int(iii) - 6
+                        iii6 = int(iii) - 8
+
+                        iii1 = str(let) + str(iii1)
+                        iii2 = str(let) + str(iii2)
+                        iii3 = str(let) + str(iii3)
+                        iii4 = str(let) + str(iii4)
+                        iii5 = str(let) + str(iii5)
+                        iii6 = str(let) + str(iii6)
+
+                        return iii1, iii2, iii3, iii4, iii5, iii6
+
+                    else:
+                        print("Out of Range")

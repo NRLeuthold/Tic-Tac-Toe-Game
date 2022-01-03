@@ -1,5 +1,6 @@
 import pygame
 import os
+import check_win
 pygame.init()
 
 WIDTH, HEIGHT = 500,500
@@ -54,7 +55,9 @@ def isOver(self, pos):
         if pos[1] > self.y and pos[1] < self.y + self.height:
             return True
     return False
-    
+
+global A1, A2
+
 
 A1 = button(white, 50, 50, 20, 20, text='')
 A2 = button(white, 90, 50, 20, 20, text='')
@@ -147,13 +150,110 @@ I8 = button(white, 390, 430, 20, 20, text='')
 I9 = button(white, 430, 430, 20, 20, text='')
 
 
+def check(tile1='', tile2='', tile3=''):
+    if tile1.text == tile2.text == tile3.text == 'X':
+        print('X')
+    elif tile1.text == tile2.text == tile3.text == 'O':
+        print('O')
+
 def main():
     play = 1
     run = True
-
+    
     while run:
-
+        pygame.display.init()
         WIN.blit(BG, (0,0))
+
+        check(A1, A2, A3)
+        check(A4, A5, A6)
+        check(A7, A8, A9)
+        check(A1, A4, A7)
+        check(A2, A5, A3)
+        check(A3, A6, A9)
+        check(A1, A5, A9)
+        check(A3, A5, A7)
+
+
+        check(B1, B2, B3)
+        check(B4, B5, B6)
+        check(B7, B8, B9)
+        check(B1, B4, B7)
+        check(B2, B5, B3)
+        check(B3, B6, B9)
+        check(B1, B5, B9)
+        check(B3, B5, B7)
+
+
+        check(C1, C2, C3)
+        check(C4, C5, C6)
+        check(C7, C8, C9)
+        check(C1, C4, C7)
+        check(C2, C5, C3)
+        check(C3, C6, C9)
+        check(C1, C5, C9)
+        check(C3, C5, C7)
+
+
+        check(D1, D2, D3)
+        check(D4, D5, D6)
+        check(D7, D8, D9)
+        check(D1, D4, D7)
+        check(D2, D5, D3)
+        check(D3, D6, D9)
+        check(D1, D5, D9)
+        check(D3, D5, D7)
+
+
+        check(E1, E2, E3)
+        check(E4, E5, E6)
+        check(E7, E8, E9)
+        check(E1, E4, E7)
+        check(E2, E5, E3)
+        check(E3, E6, E9)
+        check(E1, E5, E9)
+        check(E3, E5, E7)
+
+
+        check(F1, F2, F3)
+        check(F4, F5, F6)
+        check(F7, F8, F9)
+        check(F1, F4, F7)
+        check(F2, F5, F3)
+        check(F3, F6, F9)
+        check(F1, F5, F9)
+        check(F3, F5, F7)
+
+
+        check(G1, G2, G3)
+        check(G4, G5, G6)
+        check(G7, G8, G9)
+        check(G1, G4, G7)
+        check(G2, G5, G3)
+        check(G3, G6, G9)
+        check(G1, G5, G9)
+        check(G3, G5, G7)
+
+
+        check(H1, H2, H3)
+        check(H4, H5, H6)
+        check(H7, H8, H9)
+        check(H1, H4, H7)
+        check(H2, H5, H3)
+        check(H3, H6, H9)
+        check(H1, H5, H9)
+        check(H3, H5, H7)
+        
+        
+        check(I1, I2, I3)
+        check(I4, I5, I6)
+        check(I7, I8, I9)
+        check(I1, I4, I7)
+        check(I2, I5, I3)
+        check(I3, I6, I9)
+        check(I1, I5, I9)
+        check(I3, I5, I7)
+
+
 
         draw(A1, WIN)
         if isOver(A1, pygame.mouse.get_pos()) == True:
@@ -1450,7 +1550,7 @@ def main():
                     I9.color = ((255,255,255))
             if I9.text == 'X' or I9.text == 'O':
                 I9.color = ((255,255,255))
-
+        
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

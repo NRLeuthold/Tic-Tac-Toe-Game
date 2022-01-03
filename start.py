@@ -41,6 +41,7 @@ def isOver(self, pos):
     return False
 
 running = True
+pygame.display.init()
 
 while running:
     x, y = WIN.get_size()
